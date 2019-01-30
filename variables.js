@@ -36,4 +36,4 @@ exibeMensagemLet();
 const entree = 'Enchiladas';
 console.log(entree);
 
-entree = 'Tacos'; // gerará uma exception: assignment to constant variable.
+entree = 'Tacos'; // gerará uma exception: typeerror - assignment to constant variable.
