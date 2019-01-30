@@ -34,6 +34,21 @@ exibeMensagemLet();
 // const
 /*  uma variável const não pode ser reatribuída porque é uma constante */
 const entree = 'Enchiladas';
-console.log(entree);
+console.log(entree); // Enchiladas
 
-entree = 'Tacos'; // gerará uma exception: typeerror - assignment to constant variable.
+try{
+    entree = 'Tacos'; // gerará uma exception: typeerror - assignment to constant variable.
+}catch(e){
+    console.log(`execption gerada: ${e.message}`);
+}
+
+/*
+* typeof
+*/
+
+// o typeof verifica o valor à sua direita e retorna ou retorna em sequência o tipo de dado.
+let newVariable = 'my name is strong';
+console.log(typeof newVariable); // string
+
+newVariable = 1;
+console.log(typeof newVariable); // number
